@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 100%;
+}
+
+.splashHead{
+  height: 50px;
+  background-color: #9A9B8D;
+  border-bottom: 2px solid black;
+}
+
+.splashLeft{
+  height: 710px;
+  background-color: #EEEEEE;
+}
+
+.splashTitle{
+  margin-top: 200px;
+  text-align: center;
+}
+
+.splashTitle span{
+  color: #693D76;
+  font-size: 84px;
+  font-family: sans-serif;
+  font-weight: 100;
+
+}
+
+.splashButton{
+  background-color: #343525;
+  color: #EEEEEE;
+  padding: 8px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 23px;
+  font-family: sans-serif;
+  font-weight: 100;
+  border-radius: 5px;
+  height: 50px;
+}
+
+
+a {
+  color: inherit;
+}
+
+a:hover{
+  color: #EEEEEE;
+  text-decoration: none;
+}
+
+.splashRight{
+  height:710px;
+}
+
+.splashRight span img{
+  position: relative;
+  margin-left: -15px;
+  height:710px;
+  width: 104.4%;
+  opacity: 0.19;
+  z-index: 1;
+}
+
+.splashAlbumArt{
+  position: absolute;
+  height:225px;
+  width:225px;
+  z-index: 2;
+  margin-left: 35%;
+  background-color: #EEEEEE;
+}
+
+.artOne{
+  top:8px;
+}
+
+.artTwo{
+  top:243px;
+}
+
+.artThree{
+  top:478px;
+}
+
+.splashFoot{
+  height: 50px;
+  background-color: #67675B;
+  border-top: 2px solid black;
+  position: relative;
+}
+
+.splashFoot span{
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+}

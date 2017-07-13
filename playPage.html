@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Track Bin</title>
+  <title>Playlist</title>
 
   <!-- Importing Bootstrap -->
   <!-- Latest compiled and minified CSS -->
@@ -17,43 +17,41 @@
 
   <!-- Linking js page -->
   <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="playPage.js"></script>
 
   <!-- Linking css page -->
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="playPage.css">
 </head>
 
 <body>
   <div class="container">
     <section class="row">
-      <div class="col-md-12 splashHead">
+      <div class="col-md-12 playHead">
+        <span>click an album to add its tracks to the bin</span>
       </div>
     </section>
     <section class="row">
-      <div class="col-md-6 splashLeft">
+      <div class="col-md-12 trackSelector">
+      </div>
+    </section>
+    <section class="row">
+      <div class="col-md-10 col-md-offset-1 selectedTracks">
+      </div>
+    </section>
+    <section class="row">
+      <div class="col-md-10 col-md-offset-1 clearAndSubmitRow">
         <section class = "row">
-          <div class="col-md-6 col-md-offset-3 splashTitle">
-            <span>track bin</span>
+          <div class="col-md-3 clearButton">
+            <span>clear tracks</span>
           </div>
-          <a href="playPage.html"><div class="col-md-6 col-md-offset-3 splashButton">
-            <span>choose tracks</span>
-          </div></a>
+          <div class="col-md-3 submitButton">
+            <span>submit bin</span>
+          </div>
         </section>
       </div>
-      <div class="col-md-6 splashRight">
-          <span><img src="resources/track.jpg" alt="railroad"></span>
-          <section class = "row">
-            <div class="col-md-4 col-md-offset-4 splashAlbumArt artOne">
-            </div>
-            <div class="col-md-4 col-md-offset-4 splashAlbumArt artTwo">
-            </div>
-            <div class="col-md-4 col-md-offset-4 splashAlbumArt artThree">
-            </div>
-          </section>
-      </div>
     </section>
     <section class="row">
-      <div class="col-md-12 splashFoot">
+      <div class="col-md-12 playFoot">
         <span>&#169; 2017 kyle barker</span>
       </div>
     </section>

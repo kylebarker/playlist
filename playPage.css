@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 100%;
+}
+
+.playHead{
+  height: 100px;
+  background-color: #9A9B8D;
+}
+
+.playHead span{
+  display: inline-block;
+  position: relative;
+  color: #EEEEEE;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 100;
+  padding-left: 5%;
+  padding-top: 55px;
+}
+
+.trackSelector{
+  height: 150px;
+  background-color: blue;
+}
+
+.selectedTracks{
+  height:270px;
+  background-color: #EEEEEE;
+  border: solid 4px black;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.clearAndSubmitRow{
+  height:175px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.clearButton span{
+  background-color: #343525;
+  color: #EEEEEE;
+  padding: 8px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 23px;
+  font-family: sans-serif;
+  font-weight: 100;
+  border-radius: 5px;
+  height: 50px;
+  width: 250px;
+  margin-left: -15px;
+}
+
+.submitButton span{
+  background-color: #343525;
+  color: #EEEEEE;
+  padding: 8px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 23px;
+  font-family: sans-serif;
+  font-weight: 100;
+  border-radius: 5px;
+  height: 50px;
+  width: 250px;
+  margin-left: -45px;
+}
+
+.playFoot{
+  height: 50px;
+  background-color: #67675B;
+  position: relative;
+}
+
+.playFoot span{
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+}
