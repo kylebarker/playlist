@@ -5,9 +5,7 @@ $(document).ready(function() {
   $(window).load(function() {
     $.get("https://lit-fortress-6467.herokuapp.com/object", function(data) {
       var dataArray = data["results"];
-      console.log(dataArray)
 
-      //push to art array
       for (var i = 0; i < dataArray.length; i++) {
         var coverArt = dataArray[i]["cover_art"];
         var img = $('<img />').attr({
@@ -37,8 +35,13 @@ $(document).ready(function() {
         $('.selectedTracks').empty();
       });
 
+
       $('.submitButton').click(function() {
-    
+        var myPlaylist = $(".selectedTracks").text();
+
+        $.post("https://lit-fortress-6467.herokuapp.com/post", { playlist: myPlaylist }, function(data) {
+           console.log("Data: " + data);
+        });
       });
 
 
